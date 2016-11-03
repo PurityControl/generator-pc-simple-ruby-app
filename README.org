@@ -1,0 +1,4 @@
+#+TITLE: pc-simple-ruby-app
+
+* A yeoman generator for a simple ruby app
+
