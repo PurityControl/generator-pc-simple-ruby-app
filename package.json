@@ -5,8 +5,18 @@
   "files": [
     "generators/app"
   ],
-  "keywords": ["yeoman-generator"],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
   "dependencies": {
     "yeoman-generator": "^0.24.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2",
+    "yeoman-assert": "^2.2.1",
+    "yeoman-test": "^1.5.1"
   }
 }
