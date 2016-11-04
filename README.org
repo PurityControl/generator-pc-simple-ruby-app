@@ -1,0 +1,37 @@
+#+TITLE: pc-simple-ruby-app
+
+* A yeoman generator for a simple ruby app
+
+** Installation
+
+Currently this project is under development and is not available
+through the npm registry.
+
+To install you will have to install yeoman first
+
+#+BEGIN_SRC shell
+npm install -g yo
+#+END_SRC
+
+Then clone this repository and from the root of the project directory
+link to it with
+
+#+BEGIN_SRC shell
+npm link
+#+END_SRC
+
+** Uninstallation
+
+To remove the package uninstall it like any other global package
+
+#+BEGIN_SRC shell
+npm rm generator-pc-simple-ruby-app --global
+#+END_SRC
+
+** Using the template
+
+Create a new ruby project with:
+
+#+BEGIN_SRC shell
+yo pc-simple-ruby-app
+#+END_SRC
