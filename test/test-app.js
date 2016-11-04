@@ -16,7 +16,9 @@ describe('pc simple ruby app', function(){
     it('creates files', function(){
       assert.file([
         'Gemfile',
-        'Rakefile'
+        'Rakefile',
+        'lib/new_project.rb',
+        'test/new_project_test.rb'
       ]);
     });
   });
