@@ -5,6 +5,8 @@ var helpers = require('yeoman-test');
 
 
 describe('pc simple ruby app', function(){
+  it('will barf without arguments');
+     
   describe('default', function(){
     before(function(done){
       // on smaller dev machines this setup takes longer than the default 2s.
