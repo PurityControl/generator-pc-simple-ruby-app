@@ -10,6 +10,7 @@ describe('pc simple ruby app', function(){
       // on smaller dev machines this setup takes longer than the default 2s.
       this.timeout(0);
       helpers.run(path.join(__dirname, '../generators/app'))
+        .withArguments(['ShinyProject'])
         .on('end', done);
     });
 

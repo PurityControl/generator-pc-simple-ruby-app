@@ -1,6 +1,12 @@
 var generators = require('yeoman-generator');
 
 module.exports = generators.Base.extend({
+  constructor: function() {
+    generators.Base.apply(this, arguments);
+
+    this.argument('project_name', {type: String, required: true});
+  },
+
   writing: {
     Gemfile: function() {
       this.copy('_Gemfile', 'Gemfile');
