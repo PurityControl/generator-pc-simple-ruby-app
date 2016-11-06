@@ -33,5 +33,5 @@ npm rm generator-pc-simple-ruby-app --global
 Create a new ruby project with:
 
 #+BEGIN_SRC shell
-yo pc-simple-ruby-app
+yo pc-simple-ruby-app <project-name>
 #+END_SRC
