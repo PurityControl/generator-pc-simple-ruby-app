@@ -1,9 +1,9 @@
 require 'minitest/autorun'
 require 'rake'
 
-require 'new_project'
+require '<%= file_name %>'
 
-class TestNewProject < MiniTest::Unit::TestCase
+class Test<%= class_name %> < MiniTest::Unit::TestCase
   def setup
     #write setup stuff here
   end
@@ -12,9 +12,9 @@ class TestNewProject < MiniTest::Unit::TestCase
     #write teardown stuff here
   end
 
-  def test_new_project_exists
-    assert NewProject.new
-      "Expected to be able to create a NewProject instance"
+  def test_<%= file_name %>_exists
+    assert <%= class_name %>.new
+      "Expected to be able to create a <%= class_name %> instance"
   end
 
   def test_write_more_tests
