@@ -1,2 +1,2 @@
-class NewProject
+class <%= class_name %>
 end
