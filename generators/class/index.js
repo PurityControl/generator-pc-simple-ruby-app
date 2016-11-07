@@ -13,15 +13,9 @@ module.exports = generators.Base.extend({
   },
 
   writing: {
-    Gemfile: function() {
-      this.copy('_Gemfile', 'Gemfile');
-    },
-    Rakefile: function(){
-      this.copy('_Rakefile', 'Rakefile');
-    },
     Testfile: function() {
       this.fs.copyTpl(
-        this.templatePath('test/_new_project_test.rb'),
+        this.templatePath('test/_new_class_test.rb'),
         this.destinationPath('test/' + this.file_name + '_test.rb'),
         {
           class_name: this.class_name,
@@ -30,7 +24,7 @@ module.exports = generators.Base.extend({
     },
     Rubyfile: function() {
       this.fs.copyTpl(
-        this.templatePath('lib/_new_project.rb'),
+        this.templatePath('lib/_new_class.rb'),
         this.destinationPath('lib/' + this.file_name + '.rb'),
        {
          class_name: this.class_name
