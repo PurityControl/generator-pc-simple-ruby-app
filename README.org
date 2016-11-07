@@ -35,3 +35,9 @@ Create a new ruby project with:
 #+BEGIN_SRC shell
 yo pc-simple-ruby-app <project-name>
 #+END_SRC
+
+Create additional classes with the class subgenerator:
+
+#+BEGIN_SRC shell
+you pc-simple-ruby-app:class <class-name>
+#+END_SRC
