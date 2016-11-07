@@ -14,7 +14,7 @@ module.exports = generators.Base.extend({
       return firstLetter + rest;
     }
 
-    this.class_name = class_case(_.camelCase(this.project_name));
+    this.class_name = case_helpers.class_case(_.camelCase(this.project_name));
     this.file_name = _.snakeCase(this.project_name);
   },
 
