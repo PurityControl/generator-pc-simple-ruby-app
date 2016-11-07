@@ -1,5 +1,6 @@
 var generators = require('yeoman-generator');
 var _ = require('lodash');
+var case_helpers = require('../../lib/case-helpers');
 
 module.exports = generators.Base.extend({
   constructor: function() {
