@@ -2,7 +2,6 @@
 var path = require('path');
 var assert = require('yeoman-assert');
 var helpers = require('yeoman-test');
-var chai_assert = require('chai').assert;
 
 describe('default', function(){
   before(function(done){
